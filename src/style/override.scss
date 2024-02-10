@@ -11,6 +11,14 @@ $font-size-base: 1rem;
 $font-size-sm: $font-size-base;
 $font-size-lg: $font-size-base;
 
+// Override headers variables
+$h1-font-size: $font-size-base * 2.5;
+$h2-font-size: $font-size-base * 2;
+$h3-font-size: $font-size-base * 1.75;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.25;
+$h6-font-size: $font-size-base;
+
 // Breakpoints
 $grid-breakpoints: (
   xs: 0,
@@ -23,9 +31,13 @@ $grid-breakpoints: (
 
 // Container max-width
 $container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1140px,
+  // sm: 540px,
+  // md: 720px,
+  // lg: 960px,
+  // xl: 1140px,
   xxl: 1320px
 );
+
+// Colors
+$primary: $ha-light-green;
+$secondary: $ha-purple;
