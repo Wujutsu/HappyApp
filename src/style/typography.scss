@@ -1,0 +1,28 @@
+// Font Epilogue
+$epilogue: 'Epilogue';
+$font-family-epilogue: #{$epilogue}, sans-serif;
+
+@font-face {
+  font-family: $epilogue;
+  font-weight: 400;
+  src: url('fonts/epilogue/Epilogue-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: $epilogue;
+  font-weight: 500;
+  src: url('fonts/epilogue/Epilogue-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: $epilogue;
+  font-weight: 600;
+  font-display: swap;
+  src: url('fonts/epilogue/Epilogue-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: $epilogue;
+  font-weight: 700;
+  src: url('fonts/epilogue/Epilogue-Bold.ttf') format('truetype');
+}

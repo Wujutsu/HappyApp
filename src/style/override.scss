@@ -1,0 +1,31 @@
+// Base CSS variable prefix
+$prefix: ha-;
+
+// Override background color
+$body-bg: $ha-dark;
+$body-color: $ha-white;
+
+// Override fonts
+$font-family-base: $font-family-epilogue;
+$font-size-base: 1rem;
+$font-size-sm: $font-size-base;
+$font-size-lg: $font-size-base;
+
+// Breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+// Container max-width
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+);
