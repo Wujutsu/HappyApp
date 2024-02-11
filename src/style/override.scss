@@ -31,13 +31,16 @@ $grid-breakpoints: (
 
 // Container max-width
 $container-max-widths: (
-  // sm: 540px,
-  // md: 720px,
-  // lg: 960px,
-  // xl: 1140px,
   xxl: 1320px
 );
 
 // Colors
 $primary: $ha-light-green;
 $secondary: $ha-purple;
+
+// Buttons
+$btn-padding-x: 1rem;
+$btn-padding-y: 0.5rem;
+
+// Navbar
+$navbar-light-color: $ha-dark;
