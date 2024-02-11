@@ -1,8 +1,8 @@
 import React from 'react';
 import './Home.scss';
+import Curve from '../../components/curve/Curve';
 import Header from './header/Header';
 import Introduction from './introduction/Introduction';
-import Curve from '../../components/curve/Curve';
 
 const Home = () => {
   return (

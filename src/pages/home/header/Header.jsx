@@ -3,7 +3,7 @@ import './Header.scss';
 
 const Header = () => {
   return (
-    <nav className="ha-home-header fixed-top navbar navbar-expand-sm mx-2 mt-2 mt-sm-0">
+    <nav className="ha-home-header fixed-top navbar navbar-expand-sm mx-2">
       <div className="container">
         <a className="navbar-brand" href="#">
           <span className='text-secondary'>Happy</span>
@@ -15,17 +15,15 @@ const Header = () => {
         </button>
 
         <div class="collapse navbar-collapse" id="navbarToggler">
-          <ul class="navbar-nav ms-auto d-flex flex-row justify-content-center mt-3">
+          <ul class="navbar-nav ms-auto d-flex flex-row justify-content-evenly mt-4 mt-sm-1">
             <li>
-              <a class="btn btn-secondary mx-2" href="#">Connexion</a>
+              <a class="btn btn-outline-secondary btn-large mx-0 mx-sm-3" href="#">Connexion</a>
             </li>
             <li>
-              <a class="btn btn-secondary" href="#">Inscription</a>
+              <a class="btn btn-outline-primary btn-large" href="#">Inscription</a>
             </li>
           </ul>
         </div>
-
-
       </div>
     </nav>
   );
