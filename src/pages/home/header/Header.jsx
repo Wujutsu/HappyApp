@@ -17,10 +17,10 @@ const Header = () => {
         <div class="collapse navbar-collapse" id="navbarToggler">
           <ul class="navbar-nav ms-auto d-flex flex-row justify-content-evenly mt-4 mt-sm-1">
             <li>
-              <a class="btn btn-outline-secondary btn-large mx-0 mx-sm-3" href="#">Connexion</a>
+              <a class="btn btn-outline-secondary btn-large mx-0 mx-sm-3" href="/connexion">Connexion</a>
             </li>
             <li>
-              <a class="btn btn-outline-primary btn-large" href="#">Inscription</a>
+              <a class="btn btn-outline-primary btn-large" href="/inscription">Inscription</a>
             </li>
           </ul>
         </div>
