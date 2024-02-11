@@ -1,11 +1,11 @@
 // Base style
-@import './style/color.scss';
-@import './style/typography.scss';
-@import './style/override.scss';
-@import './style/base.scss';
+@import './style/base/color.scss';
+@import './style/base/typography.scss';
+@import './style/base/override.scss';
+@import './style/base/base.scss';
 
 // Style
-@import './style/button.scss';
+@import './style/module/button.scss';
 
 // Bootstrap library
 @import '~bootstrap/scss/bootstrap';
