@@ -1,0 +1,44 @@
+@import '../../style/color.scss';
+
+.ha-curve {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: -50vh;
+  min-height: 50vh;
+  padding-top: 100px;
+  background: $ha-deep-dark;
+  z-index: -1;
+
+  .content {
+    position: absolute;
+    height: 300px;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      border-radius: 100% 50%;
+      width: 55%;
+      height: 100%;
+      transform: translate(85%, 60%);
+      background-color: $ha-dark;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      border-radius: 100% 50%;
+      width: 55%;
+      height: 100%;
+      background-color: $ha-deep-dark;
+      transform: translate(-4%, 40%);
+      z-index: -1;
+    }
+  }
+}
