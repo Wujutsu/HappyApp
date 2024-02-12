@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <nav className="ha-home-header fixed-top navbar navbar-expand-sm mx-2">
       <div className="container">
-        <a className="navbar-brand" href="#">
+        <a className="navbar-brand" href="/">
           <span className='text-secondary'>Happy</span>
           <span className='text-primary'>App</span>
         </a>
