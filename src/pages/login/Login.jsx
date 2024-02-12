@@ -14,8 +14,8 @@ const Login = () => {
           <div class='row d-flex justify-content-center align-items-center h-100'>
             <div class='col-12 col-sm-10 col-md-8 col-lg-6 col-xl-5'>
 
-              <div class='card bg-dark text-primary' >
-                <form class='card-body px-4 px-sm-5 py-5'>
+              <div class='card bg-dark rounded-4' >
+                <form class='card-body text-primary px-4 px-sm-5 py-5'>
 
                   <h2 class='fw-bold mb-2 text-center mb-2'>Connexion</h2>
 
