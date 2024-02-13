@@ -10,10 +10,10 @@ import NavBar from '../../components/navbar/Navbar';
 
 const Visitor = () => {
   const location = useLocation();
-  const [navigation, setNavigation] = useState('');
+  const [pathCurrentPage, setPathCurrentPage] = useState('');
 
   useEffect(() => {
-    setNavigation(location.pathname);
+    setPathCurrentPage(location.pathname);
   }, [location.pathname]);
 
   return (
@@ -21,9 +21,9 @@ const Visitor = () => {
       <Curve />
       <div className='container'>
         <NavBar />
-        {navigation === "/" && <Home />}
-        {navigation === "/connexion" && <Login />}
-        {navigation === "/inscription" && <Signup />}
+        {pathCurrentPage === "/" && <Home />}
+        {pathCurrentPage === "/connexion" && <Login />}
+        {pathCurrentPage === "/inscription" && <Signup />}
       </div>
     </>
   );
