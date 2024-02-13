@@ -1,10 +1,11 @@
 import React from 'react';
-import googleLogo from '../../assets/google.svg';
-import facebookLogo from '../../assets/facebook.png';
+import './FormAuthentication.scss';
+import googleLogo from '../../../assets/google.svg';
+import facebookLogo from '../../../assets/facebook.png';
 
-const Connection = () => {
+const FormAuthentication = () => {
   return (
-    <form>
+    <form className='ha-form-authentication'>
       <div className='mb-4'>
         <label className='form-label' htmlFor='typeEmail'>Email</label>
         <input type='email' id='typeEmail' className='form-control' />
@@ -17,17 +18,19 @@ const Connection = () => {
 
       <button className='btn btn-outline-primary w-100 mt-2 mb-3 text-white' type='submit'>Continuer</button>
 
+      <div className='connection-separator text-white'>Ou</div>
+
       <button className='btn btn-outline-secondary w-100 mt-3 text-white'>
         <img src={googleLogo} alt='Google' width={24} height={24} />
-        Connexion avec Google
+        Continuer avec Google
       </button>
 
       <button className='btn btn-outline-secondary w-100 mt-3 text-white'>
         <img src={facebookLogo} alt='Facebook logo' width={26} height={26} />
-        Connexion avec Facebook
+        Continuer avec Facebook
       </button>
     </form>
   );
 };
 
-export default Connection;
+export default FormAuthentication;

@@ -1,0 +1,23 @@
+@import '../../../styles/base/color';
+
+.ha-form-authentication {
+  .connection-separator {
+    text-align: center;
+    position: relative;
+
+    &::before, &::after {
+      content: "";
+      position: absolute;
+      top: 45%;
+      display: block;
+      width: 43%;
+      height: 1px;
+      background: $ha-purple;
+
+    }
+
+    &::after {
+      left: 57%;
+    }
+  }
+}
