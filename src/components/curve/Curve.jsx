@@ -4,7 +4,7 @@ import './Curve.scss';
 const Curve = () => {
   return (
     <div className='ha-curve'>
-      <div class="content"></div>
+      <div className="content"></div>
     </div>
   );
 };

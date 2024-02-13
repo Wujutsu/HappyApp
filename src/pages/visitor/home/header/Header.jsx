@@ -1,9 +1,9 @@
 import React from 'react';
-import './Introduction.scss';
+import './Header.scss';
 
-const Introduction = () => {
+const Header = () => {
   return (
-    <section className='ha-home-introduction vh-100 text-center d-flex flex-column justify-content-center align-items-center '>
+    <section className='ha-home-header vh-100 text-center d-flex flex-column justify-content-center align-items-center '>
       <h1 className='ha-title'>
         <span className='text-secondary'>Happy</span>
         <span className='text-primary'>App</span>
@@ -14,4 +14,4 @@ const Introduction = () => {
   );
 };
 
-export default Introduction;
+export default Header;
