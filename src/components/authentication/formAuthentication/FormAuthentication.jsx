@@ -1,7 +1,6 @@
 import React from 'react';
 import './FormAuthentication.scss';
 import googleLogo from '../../../assets/google.svg';
-import facebookLogo from '../../../assets/facebook.png';
 
 const FormAuthentication = () => {
   return (
@@ -23,11 +22,6 @@ const FormAuthentication = () => {
       <button className='btn btn-outline-secondary w-100 mt-3 text-white'>
         <img src={googleLogo} alt='Google' width={24} height={24} />
         Continuer avec Google
-      </button>
-
-      <button className='btn btn-outline-secondary w-100 mt-3 text-white'>
-        <img src={facebookLogo} alt='Facebook logo' width={26} height={26} />
-        Continuer avec Facebook
       </button>
     </form>
   );

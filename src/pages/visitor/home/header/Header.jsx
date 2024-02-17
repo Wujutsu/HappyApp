@@ -9,7 +9,7 @@ const Header = () => {
         <span className='text-primary'>App</span>
       </h1>
       <div className='h4 text-primary'>Un jour, un mood, une mélodie</div>
-      <p className='mt-4'>Crée ton journal émotionnel en associant ta journée à une mélodie, suis ton humeur quotidienne, découvre le bonheur dans les petites choses de la vie.</p>
+      <p className='mt-4 mw-800'>Crée ton journal émotionnel en associant ta journée à une mélodie, suis ton humeur quotidienne, découvre le bonheur dans les petites choses de la vie.</p>
     </section>
   );
 };
