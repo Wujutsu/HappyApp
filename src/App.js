@@ -17,7 +17,7 @@ const App = () => {
           <Route path='/connexion' element={<Visitor />} />
           <Route path='/inscription' element={<Visitor />} />
           {/* Application */}
-          <Route path='/mood' element={<Application />} />
+          <Route path='/moods' element={<Application />} />
           <Route path='/labels' element={<Application />} />
         </Routes>
       </Router>

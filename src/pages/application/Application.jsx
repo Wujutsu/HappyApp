@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 
 import Curve from '../../components/curve/Curve';
-import Mood from './mood/Mood';
+import Moods from './moods/Moods';
 import Labels from './labels/Labels';
 
 const Application = () => {
@@ -17,7 +17,7 @@ const Application = () => {
     <>
       <Curve />
       <div className='container'>
-        {pathCurrentPage === "/mood" && <Mood />}
+        {pathCurrentPage === "/moods" && <Moods />}
         {pathCurrentPage === "/labels" && <Labels />}
       </div>
     </>

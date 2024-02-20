@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Smiley from '../../../components/smiley/Smiley';
 
-const Mood = () => {
+const Moods = () => {
   const [selectedMood, setSelectedMood] = useState([]);
 
   const handleSelectMood = (mood) => {
@@ -37,4 +37,4 @@ const Mood = () => {
   );
 };
 
-export default Mood;
+export default Moods;
