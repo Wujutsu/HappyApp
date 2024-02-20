@@ -4,7 +4,7 @@ import './Smiley.scss';
 const Smiley = ({ typeMood = 'normal', onSelectMood, selected }) => {
 
   const handleClick = () => {
-    onSelectMood(selected ? null : typeMood);
+    onSelectMood(typeMood);
   }
 
   const handleKeyDown = (event) => {
@@ -19,17 +19,26 @@ const Smiley = ({ typeMood = 'normal', onSelectMood, selected }) => {
       labelSmiley = 'Heureux';
       break;
     case 'normal':
-      labelSmiley = 'Normal';
+      labelSmiley = 'Neutre';
       break;
     case 'sad':
       labelSmiley = 'Triste';
+      break;
+    case 'anger':
+      labelSmiley = 'Fâché';
+      break;
+    case 'tired':
+      labelSmiley = 'Fatigué';
+      break;
+    case 'anxious':
+      labelSmiley = 'Anxieux';
       break;
     default:
       labelSmiley = '';
   }
 
   return (
-    <div className={`smiley ${selected ? 'selected' : ''}`} onClick={handleClick} onKeyDown={handleKeyDown} tabIndex={0} aria-label={labelSmiley}>
+    <div className={`smiley smiley-${typeMood} ${selected ? 'selected' : ''}`} onClick={handleClick} onKeyDown={handleKeyDown} tabIndex={0} aria-label={labelSmiley}>
       <div className={typeMood}>
         <div className='eyes'>
           <div className='eye'></div>
@@ -37,9 +46,7 @@ const Smiley = ({ typeMood = 'normal', onSelectMood, selected }) => {
         </div>
         <div className='mouth'></div>
       </div>
-      <div className='description d-none d-sm-block'>
-        {labelSmiley}
-      </div>
+      <div className='description'> {labelSmiley} </div>
     </div>
   );
 };
