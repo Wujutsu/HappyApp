@@ -18,7 +18,7 @@ const Labels = () => {
   }
 
   return (
-    <section className='ha-labels vh-100'>
+    <section className='ha-labels vh-100 mb-8 mb-sm-0'>
       <div className='d-flex flex-column align-items-center justify-content-start mt-8 mt-sm-0 justify-content-sm-center h-100'>
         <h3 className='text-center fw-bold'>Quelles catégories ont le plus impacté ta journée ?</h3>
 
@@ -28,7 +28,8 @@ const Labels = () => {
           ))}
         </div>
 
-        <button className='btn btn-outline-light mt-3 px-6'>Suivant</button>
+        <div className='mb-3'>{selectedLabel.length} {selectedLabel.length > 1 ? 'libellés sélectionnés' : 'libellé sélectionné'}</div>
+        <button className='btn btn-outline-light mt-1 px-6' disabled={selectedLabel.length <= 0}>Suivant</button>
       </div>
     </section>
   );
