@@ -4,6 +4,7 @@ import { useLocation } from 'react-router-dom';
 import Curve from '../../components/curve/Curve';
 import Moods from './moods/Moods';
 import Labels from './labels/Labels';
+import Song from './song/Song';
 
 const Application = () => {
   const location = useLocation();
@@ -19,6 +20,7 @@ const Application = () => {
       <div className='container'>
         {pathCurrentPage === "/moods" && <Moods />}
         {pathCurrentPage === "/labels" && <Labels />}
+        {pathCurrentPage === "/song" && <Song />}
       </div>
     </>
   );

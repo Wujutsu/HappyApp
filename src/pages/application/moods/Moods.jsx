@@ -17,7 +17,7 @@ const Moods = () => {
   }
 
   return (
-    <section className='ha-mood vh-100 mb-8 mb-sm-0'>
+    <section className='ha-moods vh-100 mb-8 mb-sm-0'>
       <div className='d-flex flex-column align-items-center justify-content-start mt-8 mt-sm-0 justify-content-sm-center h-100'>
         <h3 className='text-center fw-bold'>Quels moods représentent le mieux ta journée ?</h3>
 
