@@ -17,12 +17,8 @@ const Song = () => {
           <PouchSong />
         </div>
 
-        <button type='submit' className='btn btn-outline-light mt-4 px-6 w-100 mw-300'>Suivant</button>
+        <button type='submit' className='btn btn-outline-light mt-4 px-6'>Suivant</button>
       </form>
-
-
-
-
     </section>
   );
 };
